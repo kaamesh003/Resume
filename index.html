@@ -1,110 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Student Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            line-height: 1.6;
-            background-color: burlywood;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        
-        }
-
-        .name {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            background-color: chocolate;
-            max-width: 200px;
-            margin-left: 40%;
-        }
-
-        .contact {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            
-        }
-
-        .section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            background-color: chocolate;
-            max-width: fit-content;
-        }
-
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .section ul li {
-            margin-bottom: 8px;
-        }
-    </style>
+    <title>Feedback Form</title>
 </head>
-
 <body>
-    <div class="header">
-        <div class="name">Kaamesh S</div>
-        <div class="contact">Coimbatore | 720721115021@hicet.ac.in | 8754718005 | LinkedIn: linkedin.com/in/KaameshShanmugam</div>
-    </div><hr>
-
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>HICET</strong> - Btech., AIML (2021- 2025)</li>
-            <li>GPA: 8.13/10</li>
+    <center>
+        <h1> PS5 Feedback Form</h1>
+    </center>
+    <div class="box">
+        <form action="form.html"> <label>Name: <input type="text"></label><br>
+            <label>Email: <input type="email"></label><br>
+            <label for="Performance">Performance:</label>
+            <select name="Performance">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select><br>
+            <label for="Design">Design:</label>
+            <select name="Design">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select><br>
+            <label for="Features">Features:</label>
+            <select name="Features">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select><br>
+            <label class="box2">Comments: <input type="text"></label>
             
-        </ul>
-    </div><hr>
-
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Technical Skills: Design Thinking,Programming</li>
-            <li>Known Languages: Python,Java</li>
-            <li>Soft Skills: Communication, Problem-solving, Teamwork</li>
-        </ul>
-    </div><hr>
-
-    <div class="section">
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                
-                <ul>
-                    <li>pursuing to find a job.</li>
-                </ul>
-            </li>
-            <!-- Add more experiences as needed -->
-        </ul>
-    </div><hr>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Angular mapping</strong>
-                <ul>
-                    <li>To create a locator app like google maps using Angular js</li>
-                </ul>
-            </li>
-        </ul>
+            <button type="submit">Submit</button>
+        </form>
+        
     </div>
-</body>
+    <style>
+        body{
+            background-color: grey;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        label {
+           display: block;
+           margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+           width: 100%;
+           padding: 5px;
+           margin-bottom: 10px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+        }
 
+        h1{
+          text-align: center;
+          color: maroon;
+        }
+        textarea {
+          resize: vertical;
+        }
+
+        input[type="submit"] {
+           background-color: black;
+           color: white;
+           border: none;
+           padding: 10px 20px;
+           border-radius: 5px;
+           cursor: pointer;
+        }
+
+        button{
+          margin-left: 150px;
+          height: 20px;
+          width: 100px;
+          background-color:gray;
+          color:beige;
+        }
+
+    
+  
+
+    </style>
+</body>
 </html>
